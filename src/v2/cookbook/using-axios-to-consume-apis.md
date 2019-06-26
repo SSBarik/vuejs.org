@@ -146,7 +146,7 @@ new Vue({
 
     <div
       v-else
-      v-for="currency in info"
+      v-for="currency in info" :key="currency.id"
       class="currency"
     >
       {{ currency.description }}:
